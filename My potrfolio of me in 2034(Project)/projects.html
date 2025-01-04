@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Projects</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+  <header>
+      <div id="menu">
+        <nav>
+            <ul class="sidebar">
+                <li onclick=closeSidebar()><a href="#"><img src="media/navIcons/close_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="experience.html">My experiecne</a></li>
+                <li><a href="projects.html">My projects</a></li>
+                <li><a href="contactMe.html">Contact me</a></li>
+                <li><a href="report.html">My report</a></li>
+            </ul>
+            <ul>
+                <li class="hideOnSmallScr"><a href="index.html">Home</a></li>
+                <li class="hideOnSmallScr"><a href="blog.html">Blog</a></li>
+                <li class="hideOnSmallScr"><a href="experience.html">My experiecne</a></li>
+                <li class="hideOnSmallScr"><a href="projects.html">My projects</a></li>
+                <li class="hideOnSmallScr"><a href="contactMe.html">Contact me</a></li>
+                <li class="hideOnSmallScr"><a href="report.html">My report</a></li>
+                <li class="menuButton" onclick=showSidebar()><a href="#"><img src="media/navIcons/menu_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"></a></li>
+            </ul>
+        </nav>
+      </div>
+  </header>
+  <main>
+      <div id="projects">
+      <h1>My projects</h1>
+      <div class="project1">
+          <div class="slider">
+             <div class="img-box">
+                <img onmouseover=showButtons(0) onmouseout=hideButtons(0) class="picture" src="media/projectspage/Portfolio_web/51ff73ef-a3b4-4e0d-969e-29ebfa33f2de.webp">   
+              </div>
+               <img onmouseover=showButtons(0) onmouseout=hideButtons(0) onclick="switchL(0, index1, images1)" class="Lbutton" src="media/navIcons/arrow_back_ios_26dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg">
+               <img onmouseover=showButtons(0) onmouseout=hideButtons(0)  onclick="switchR(0,  index1, images1)" class="Rbutton" src="media/navIcons/arrow_forward_ios_26dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg">
+          </div>
+          <div class="text">
+              <h2>Minimalistic Portfolio Website Design</h2>
+              <p>This project showcases a modern, minimalistic portfolio website, designed for creatives who prefer a clean and elegant online presence. The layout features a centered hero section with a concise introduction and a call-to-action button, guiding visitors through the site with ease. The sleek, horizontal navbar ensures simple navigation, while the portfolio grid elegantly displays work with clean, bordered thumbnails. The neutral color scheme—white background, black text, and light gray accents—emphasizes simplicity and professionalism, making the content the focal point of the site.</p>
+          </div>
+      </div>
+      <div class="project2">
+          <div class="slider">
+             <div class="img-box">
+                <img onmouseover=showButtons(1) onmouseout=hideButtons(1) class="picture" src="media/projectspage/Task_manager_web/Task%20Manager%20-%20Board.jpeg">
+             </div>
+               <img onmouseover=showButtons(1) onmouseout=hideButtons(1) onclick="switchL(1, index2, images2)" class="Lbutton" src="media/navIcons/arrow_back_ios_26dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg">
+               <img onmouseover=showButtons(1) onmouseout=hideButtons(1) onclick="switchR(1, index2, images2)" class="Rbutton" src="media/navIcons/arrow_forward_ios_26dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg">
+          </div>
+          <div class="text">
+              <h2>AI-Powered Task Manager</h2>
+              <p>This project is an AI-powered task management application designed to enhance productivity by intelligently organizing tasks based on priority, deadlines, and user behavior. Built with React on the front end and Node.js on the back end, it integrates AI algorithms to learn from user interactions, offering personalized suggestions and automating routine tasks. The app also features seamless cloud synchronization, ensuring that users can access their tasks from any device. This project showcases my ability to blend AI with user-centric design, creating a tool that adapts to individual workflows.</p>
+          </div>
+      </div>
+      <div class="project3">
+          <div class="slider">
+             <div class="img-box">
+                   <img  onmouseover=showButtons(2) onmouseout=hideButtons(2) class="picture" src="media/projectspage/Car_dealer_web/Car%20Dealer%20-%20Automotive%20Responsive%20WordPress%20Theme.jpeg">
+             </div>
+               <img onmouseover=showButtons(2) onmouseout=hideButtons(2) onclick="switchL(2, index3, images3)" class="Lbutton" src="media/navIcons/arrow_back_ios_26dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg">
+               <img onmouseover=showButtons(2) onmouseout=hideButtons(2) onclick="switchR(2, index3, images3)" class="Rbutton" src="media/navIcons/arrow_forward_ios_26dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg">
+          </div>
+          <div class="text">
+              <h2>Car Dealership Website </h2>
+              <p>This project is a comprehensive car dealership website designed to provide a seamless online car-buying experience. Built using React for the front end and Express.js with MongoDB for the back end, the website features an intuitive user interface that allows customers to browse, compare, and purchase vehicles with ease. The site includes advanced search and filtering options, detailed vehicle descriptions, high-resolution image galleries, and a secure online booking system. Additionally, it integrates a CRM system to manage customer inquiries and sales leads efficiently. This project demonstrates my ability to create user-friendly, data-driven web applications that cater to both business needs and customer satisfaction.</p>
+          </div>
+      </div>
+  </div>
+</main>
+  <footer>
+       <p>Garry Rubin</p>
+       <a href="externalaserviceDummy.html"><img src="media/footerSM/FaceBookLogo.png" style="width:  50px"></a>
+       <a href="externalaserviceDummy.html"><img src="media/footerSM/linkedInLogo.png" style="width: 50px"></a>
+       <hr>
+  </footer>      
+</body>
+</html>

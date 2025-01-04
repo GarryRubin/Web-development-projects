@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My portfolio in 2034</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+  <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=closeSidebar()><a href="#"><img src="media/navIcons/close_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="experience.html">My experiecne</a></li>
+                <li><a href="projects.html">My projects</a></li>
+                <li><a href="contactMe.html">Contact me</a></li>
+                <li><a href="report.html">My report</a></li>
+            </ul>
+            <ul>
+                <li class="hideOnSmallScr"><a href="index.html">Home</a></li>
+                <li class="hideOnSmallScr"><a href="blog.html">Blog</a></li>
+                <li class="hideOnSmallScr"><a href="experience.html">My experiecne</a></li>
+                <li class="hideOnSmallScr"><a href="projects.html">My projects</a></li>
+                <li class="hideOnSmallScr"><a href="contactMe.html">Contact me</a></li>
+                <li class="hideOnSmallScr"><a href="report.html">My report</a></li>
+                <li class="menuButton" onclick=showSidebar()><a href="#"><img src="media/navIcons/menu_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"></a></li>
+            </ul>
+        </nav>
+  </header>
+  <main>
+      <div id="short-overview">
+      <img src="media/mainpage/Garry.png"  >
+      <h1>Hello, I am Garry Rubin</h1>
+      <p>Welcome to my portfolio! I'm a passionate web developer with a strong foundation in both front-end and back-end technologies. Over the years, I've crafted dynamic, user-focused web applications and led impactful projects that merge creativity with cutting-edge tech. Explore my work to see how I bring ideas to life through clean code, innovative design, and a commitment to excellence. Let's build something amazing together!</p>
+      <form action="./blog.html"><input type="submit" value="About me"></form>
+  </div>
+  
+  <div id="skills">
+     <h2>What I can do</h2>
+        <div class="flex-container">
+             <article class="item">
+                 <img src="media/mainpage/frontendIcon.jpg">
+                 <p>Front end development</p>
+             </article>
+             <article class="item">
+                 <img src="media/mainpage/backendIcon.jpg">
+                 <p>Back end development</p>
+             </article>
+             <article class="item">
+                 <img src="media/mainpage/projectIcon.jpg">
+                 <p>Project manage</p>
+             </article>
+         </div>
+    </div>
+    <div id="buttons">
+      <a href="projects.html"><input type="button" value="My projects"></a><a href="experience.html"><input type="button" value="My experience"></a>
+    </div>
+  </main>
+  <footer>
+       <p>Garry Rubin</p>
+       <a href="externalaserviceDummy.html"><img src="media/footerSM/FaceBookLogo.png" style="width:  50px"></a>
+       <a href="externalaserviceDummy.html"><img src="media/footerSM/linkedInLogo.png" style="width: 50px"></a>
+       <hr>
+  </footer>      
+</body>
+</html>
