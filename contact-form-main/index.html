@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="https://fonts.google.com/specimen/Karla">
+  <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+  
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .required::after{
+        content: "*";
+        color: hsl(169, 82%, 27%);
+        font-size: 15px
+    }
+  </style>
+</head>
+<body>
+    <main>
+     <h1>Contact Us</h1>
+     <form>
+
+         <div class="nameAndLname">
+             <div class="name">
+                   <p class="required">First Name</p>
+                   <input type="text" required oninvalid="setCustomValidity('Thisa field is required'), readyToSubmit = false" oninput="setCustomValidity(''), readyToSubmit = true"/>
+             </div>
+             <div class="name">
+                   <p class="required">Last Name</p>
+                   <input type="text" required oninvalid="setCustomValidity('This field is required'), readyToSubmit = false" oninput="setCustomValidity(''), readyToSubmit = true"/>   
+              </div>
+         </div>
+
+         <div class="email">
+              <p class="required">Email Address</p>
+              <input type="text" required oninvalid="setCustomValidity('This field is required'), readyToSubmit = false" oninput="setCustomValidity(''), readyToSubmit = true"/>
+        <!--      Please enter a valid email address-->
+         </div>
+
+         <div class="queryType">
+              <p class="required">Query Type</p>
+              <div class="radioInput">
+                  <label class="radio"><input type="radio" name="querytype" required oninvalid="setCustomValidity('Please select a query type'), readyToSubmit = false" oninput="setCustomValidity(''), readyToSubmit = true"/>General Enquiry</label> 
+                  <label class="radio"><input type="radio" name="querytype" required oninvalid="setCustomValidity('Please select a query type'), readyToSubmit = false" oninput="setCustomValidity(''), readyToSubmit = true"/>Support Request</label>
+              </div>
+        </div>
+              
+
+         <div class="message">
+             <p class="required">Message</p>
+             <input type="text" required oninvalid="setCustomValidity('This field is required'), readyToSubmit = false" oninput="setCustomValidity(''), readyToSubmit = true"/>
+         </div>
+
+         <br>
+         <br>
+          <input type="checkbox" required oninvalid="setCustomValidity('To submit this form, please consent to being contacted'), readyToSubmit = false" oninput="setCustomValidity(''), readyToSubmit = true"/><label class="required">I consent to being contacted by the team</label>
+          <br>
+          <br>
+          <button onclick="submitted()">Submit</button>
+    <!--
+          Message Sent!
+          Thanks for completing the form. We'll be in touch soon!
+    -->
+     </form>
+
+
+      
+    </main>
+    
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+        Coded by <a href="#">Your Name Here</a>.
+    </div>
+</body>
+</html>
