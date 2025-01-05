@@ -1,0 +1,60 @@
+*{
+margin: 10px;
+font-family: arial;
+line-height: 25px;
+/*background-color: #ECB51D;*/
+}
+
+body {
+    background-color: #ECB51D;
+} 
+
+div.mainPage{
+    width: 350px;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 15px;
+    margin: auto;
+    box-shadow: 10px 10px  black;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+.avatar { grid-area: avatar}
+.name { grid-area: name}
+
+div.author {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: 'avatar name';
+    width: 60%;
+}
+/*need to finish the grid layout here*/
+
+img.banner{
+    border-radius: 10px;
+}
+
+input{
+    background-color: #ECB51D;
+    border: 0;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+p.date {
+    margin-bottom: 20px;
+/*    font-family: Figtree-SemiBold.tff;
+    как применить шрифты*/
+}
+
+p.name {
+    margin-top: 30px;
+    font-weight: bold;
+}
+h2 {
+    margin-bottom: 30px;
+}
